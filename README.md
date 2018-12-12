@@ -1,5 +1,9 @@
 [![N|Solid](http://solutis.com.br/images/logo.png)](http://solutis.com.br)
 
+#SOLUÇÃO PROPOSTA
+
+Utilizar o algoritimo de Dijkstra (custo uniforme) para buscar a menor rota de um ponto a outro, para os pontos intermediários a busca sofre um split indo do ponto a ao ponto b depois do ponto b ao ponto c 
+
 # EXECUÇÃO
 
 `python3 Uniforme.py <ponto_atual> <ponto_destino> <nome_do_mapa.csv>`
