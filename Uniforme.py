@@ -11,10 +11,23 @@ class Agente(object):
     mapa = []
 
     def __init__(self,*args):
-        node = Node(args[0],Problema(args[1]),None,0)
-        self.opencsv(args[2])
-        self.fronteira.append(node)
-        self.busca()        
+        
+        attr = str(args[0]).replace('[','').replace(']','').replace(' ','').replace("'",'').split(',')       
+        if len(attr) < 5:
+            self.opencsv(attr[3])
+            node1 = Node(attr[1],Problema(attr[2]),None,0)
+            self.fronteira.append(node1)
+            self.busca() 
+        else:
+            self.opencsv(attr[4])
+            node1 = Node(attr[1],Problema(attr[2]),None,0)
+            node2 = Node(attr[2],Problema(attr[3]),None,0)
+            self.fronteira.append(node1)
+            self.busca()
+            self.explorados = []
+            self.fronteira = []
+            self.fronteira.append(node2)
+            self.busca()     
 
     def opencsv(self,mapaCsv):
         with open(mapaCsv, 'r', newline='') as csvfile:
@@ -59,6 +72,6 @@ class Agente(object):
 
 
 inicio = time.time()
-Agente(sys.argv[1],sys.argv[2],sys.argv[3])
+Agente(sys.argv)
 fim = time.time()
 print('run time ' + str(fim - inicio) + " seconds")
