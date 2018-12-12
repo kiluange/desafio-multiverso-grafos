@@ -49,11 +49,14 @@ class Agente(object):
     def exibeCaminho(self, result):
         temp = result
         tempVet = []
+        i = 1
         while temp is not None:
             tempVet.append(temp)
             temp = temp.node
         for item in reversed(tempVet):
-            print('em ' + str(item.estadoAtual) + ' com distancia ' + str(item.custo))
+            print('passo'+str(i)+' em ' + str(item.estadoAtual) + ' com distancia ' + str(item.custo))
+            i = i + 1
+
 
 inicio = time.time()
 Agente(sys.argv[1],sys.argv[2],sys.argv[3])
