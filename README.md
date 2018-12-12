@@ -1,5 +1,9 @@
 [![N|Solid](http://solutis.com.br/images/logo.png)](http://solutis.com.br)
 
+# EXECUÇÃO
+
+`python3 Uniforme.py <ponto_atual> <ponto_destino> <nome_do_mapa.csv>`
+
 # NOSSO DESAFIO RICK - GRAFOS
 Na ficção científica, a viagem entre diferentes universos, é feita através de portais ou buracos de minhocas que conectam mundos diferentes ou até mesmo dimensões diferentes.
 
