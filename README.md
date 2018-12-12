@@ -4,6 +4,13 @@
 
 `python3 Uniforme.py <ponto_atual> <ponto_destino> <nome_do_mapa.csv>`
 
+## SAÍDA ESPERADA
+
+`passo1 em B com distancia 0`
+`passo2 em C com distancia 40`
+`passo3 em E com distancia 60`
+`run time 0.0002834796905517578 seconds`
+
 # NOSSO DESAFIO RICK - GRAFOS
 Na ficção científica, a viagem entre diferentes universos, é feita através de portais ou buracos de minhocas que conectam mundos diferentes ou até mesmo dimensões diferentes.
 
