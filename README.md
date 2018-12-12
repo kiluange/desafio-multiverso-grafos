@@ -4,6 +4,8 @@
 
 `python3 Uniforme.py <ponto_atual> <ponto_destino> <nome_do_mapa.csv>`
 
+`python3 Uniforme.py <ponto_atual> <ponto_intermediario - opcional> <ponto_destino> <nome_do_mapa.csv>`
+
 ## SAÍDA ESPERADA
 
 `passo1 em B com distancia 0`
