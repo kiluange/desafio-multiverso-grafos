@@ -7,8 +7,11 @@
 ## SAÍDA ESPERADA
 
 `passo1 em B com distancia 0`
+
 `passo2 em C com distancia 40`
+
 `passo3 em E com distancia 60`
+
 `run time 0.0002834796905517578 seconds`
 
 # NOSSO DESAFIO RICK - GRAFOS
